@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -rfv $HOME/.dotfiles/files $HOME/
+cp -rfv $HOME/.dotfiles/files/ $HOME/
