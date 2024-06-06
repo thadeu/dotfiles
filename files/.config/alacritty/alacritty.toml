@@ -1,0 +1,43 @@
+# https://alacritty.org/config-alacritty.html
+
+import = []
+
+[font]
+
+size = 14.0
+
+normal = { family = 'JetBrainsMono Nerd Font Mono' }
+
+[window]
+
+padding = { y= 5, x= 5 }
+
+position = { y = 110, x = 30 }
+
+dimensions = { columns = 207, lines = 36 }
+
+opacity = 1.0
+
+decorations = "buttonless"
+   
+[cursor]
+unfocused_hollow = true
+
+style = { blinking = "Never" }
+
+[env]
+TERM = "xterm-256color"
+
+[scrolling]
+history = 2000
+
+[terminal]
+osc52 = "CopyPaste"
+
+[selection]
+
+# Characters that are used as separators for "semantic words" in Alacritty
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\\t"  # Default: ",│`|:\"' ()[]{}<>\\t"
+
+# When set to true, selected text will be copied to the primary clipboard
+save_to_clipboard = true  # Default: false
