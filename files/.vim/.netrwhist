@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/thadeu/code/atendesimples/serveless'
+let g:netrw_dirhist_8='/Users/thadeu/.tmux'
+let g:netrw_dirhist_7='/Users/thadeu/code'
+let g:netrw_dirhist_6='/Users/thadeu/.oh-my-zsh'
+let g:netrw_dirhist_5='/Users/thadeu/code/atendesimples/atendesimples-app/app/admin'
+let g:netrw_dirhist_4='/Users/thadeu/code/atendesimples/atendesimples-app/app'
+let g:netrw_dirhist_3='/Users/thadeu/code/atendesimples/atendesimples-app'
+let g:netrw_dirhist_2='/Users/thadeu/code/atendesimples'
+let g:netrw_dirhist_1='/Users/thadeu/code'

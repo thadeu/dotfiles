@@ -1,0 +1,18 @@
+[color]
+	ui = true
+[user]
+	name = thadeu
+	email = tadeuu@gmail.com
+[merge]
+	#ff = no
+	#commit = no
+	no-edit = true
+[alias]
+	co = checkout
+	cb = checkout -b
+	cm = checkout master
+	psh = push origin HEAD
+	cp = checkout production
+	lg = log --oneline
+	undo = checkout --
+	merge = merge --no-edit
