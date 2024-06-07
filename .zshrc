@@ -141,3 +141,5 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 eval "$(fnm env --use-on-cd)" > /dev/null
 export PATH="$PATH:`yarn global bin`"
+
+zellij
