@@ -115,6 +115,11 @@ group_terminal() {
   link config/ghostty   "$HOME/.config/ghostty"
   link config/alacritty "$HOME/.config/alacritty"
   link config/zellij    "$HOME/.config/zellij"
+
+  # On macOS Ghostty reads Application Support first and only falls back to
+  # ~/.config, so the main config has to be linked into both locations.
+  link config/ghostty/config \
+    "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 }
 
 group_nvim() {

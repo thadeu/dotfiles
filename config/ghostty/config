@@ -1,0 +1,41 @@
+term = "xterm-256color"
+
+theme = clowk-night
+
+font-family = "MesloLGS Nerd Font Mono"
+font-size = "14"
+font-feature=-liga
+font-thicken=true
+
+background-opacity = 0.96
+background-blur = true
+
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+adjust-cell-height = 0.2%
+mouse-scroll-multiplier = 2
+
+window-padding-balance=true
+window-save-state=always
+window-subtitle=working-directory
+window-colorspace = "display-p3"
+window-width = 178
+window-height=51
+working-directory = /Users/thadeu/code
+
+window-decoration = true
+
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = left
+
+gtk-toolbar-style = flat
+gtk-wide-tabs = false
+gtk-titlebar = false
+
+
+keybind = cmd+s>r=reload_config
+
+copy-on-select = clipboard
+
+auto-update = download

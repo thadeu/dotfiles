@@ -4,7 +4,9 @@
 .zshrc.local
 *.local
 .npmrc
+.netrc
 config/gh/hosts.yml
+config/ngrok/
 ssh/known_hosts
 ssh/id_*
 !home/.zshrc.local.example
