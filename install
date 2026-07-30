@@ -1,7 +1,0 @@
-#!/bin/bash
-
-git pull origin main --no-ff
-
-#cp -rfv $HOME/.dotfiles/files/ $HOME/
-
-ln -sf .zshrc $HOME

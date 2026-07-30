@@ -84,7 +84,8 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 #	zsh-autosuggestions
 #)
 # plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting)
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+#plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,10 +115,21 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
+alias gh-pr-create="gh pr create --web -B production -a @me"
+alias ls='lsd'
+alias k='kubectl'
+alias mp="multipass"
 #alias dokku='bash $HOME/.dokku/contrib/dokku_client.sh'
+alias c="open $1 -a Cursor"
+alias v="open $1 -a \"Visual Studio Code\""
+alias pn="pnpm"
+alias bx="bunx"
+alias t="task"
+alias tf="terraform"
+alias r=rails
 
 # fnm
-export PATH="/Users/thadeu/Library/Application Support/fnm:$PATH"
+export PATH="$HOME/Library/Application Support/fnm:$PATH"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
@@ -126,7 +138,7 @@ export DISABLE_SPRING=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+#export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 # nokogiri
@@ -139,5 +151,49 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+#eval "$(mise activate zsh --shims)"
+eval "$(mise activate zsh)"
 eval "$(fnm env --use-on-cd)" > /dev/null
-export PATH="$PATH:`yarn global bin`"
+#export PATH="$PATH:`yarn global bin`"
+
+unsetopt nomatch
+
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bum
+export BUM_INSTALL="$HOME/.bum"
+export PATH="$BUM_INSTALL/bin:$PATH"
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#export ANDROID_HOME=$HOME/Library/Android/sdk
+#export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
+#export PATH=$ANDROID_HOME/emulator:$PATH
+#export PATH=$ANDROID_HOME/platform-tools:$PATH
+
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="/opt/homebrew/opt/socket_vmnet/bin:$PATH"
+
+# Added by Antigravity
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
+
+export RUSTUP_TOOLCHAIN=stable
+
+# Secrets and machine-specific overrides live outside git.
+# See .zshrc.local.example in the dotfiles repo.
+[[ ! -f ~/.zshrc.local ]] || source ~/.zshrc.local

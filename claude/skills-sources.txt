@@ -1,0 +1,4 @@
+mattpocock/skills
+thadeu/claude-issue-description
+thadeu/voodu-skill
+vercel-labs/skills

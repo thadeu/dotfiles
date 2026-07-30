@@ -1,0 +1,11 @@
+# Copy to ~/.zshrc.local and fill in. This file is NEVER committed.
+#
+#   cp home/.zshrc.local.example ~/.zshrc.local
+#
+# Sourced at the end of ~/.zshrc.
+
+export REGISTRY_GITHUB_TOKEN=""
+export READ_REGISTRY_GITHUB=""
+export GHP_PAT=""
+
+export LOCALSTACK_AUTH_TOKEN=""

@@ -1,0 +1,14 @@
+.DS_Store
+
+# Secrets — never commit
+.zshrc.local
+*.local
+.npmrc
+config/gh/hosts.yml
+ssh/known_hosts
+ssh/id_*
+!home/.zshrc.local.example
+
+# Editor/tool noise
+*.bak
+.netrwhist

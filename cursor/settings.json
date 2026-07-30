@@ -1,0 +1,344 @@
+{
+    "editor.tabSize": 2,
+    "editor.guides.bracketPairs": true,
+    "css.validate": false,
+    "editor.fontLigatures": false,
+    "editor.semanticHighlighting.enabled": false,
+    "explorer.compactFolders": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "prettier.vueIndentScriptAndStyle": true,
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "javascriptreact",
+        "typescriptreact"
+    ],
+    "auto-close-tag.disableOnLanguage": [
+        "typescript"
+    ],
+    "search.followSymlinks": false,
+    "files.exclude": {
+        "**/tmp/**": false,
+        "**/node_modules/**": false,
+        "**/.git/objects/**": true,
+        "**/log/**": true,
+        "**/sass-cache/**": true,
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "**/log/**": true,
+        "env-*": true,
+        "**/sass-cache/**": true,
+        "**/coverage/**": true,
+        "**/tmp/**": true,
+        "**/public/**": true,
+        "**/vendor/**": true,
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/tmp": true,
+        "**/.bundle": true,
+        "**/.vscode": true,
+        "**/log": true,
+        "**/test": true,
+        "**/vendor": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/dist/**": true,
+        "**/build/**": true,
+        "**/public/**": true,
+        "**/tmp/**": true,
+        "**/sass-cache/**": true,
+        "**/log/**": true,
+        "**/coverage/**": true,
+    },
+    "files.associations": {
+        "*.js.erb": "javascriptreact",
+        "*.vue.*": "vue",
+        "*.js": "javascriptreact",
+        "*.ts": "typescript",
+        "*.yml": "yaml",
+        "*.graphql": "graphql",
+        "*.voodu": "hcl",
+        "*.vdu": "hcl",
+        "*.vd": "hcl"
+    },
+    "emmet.includeLanguages": {
+        "erb": "html",
+        "javascript": "javascriptreact"
+    },
+    "typescript.check.npmIsInstalled": false,
+    "[postcss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "swift.diagnosticsCollection": "onlySwiftc",
+    "[rust]": {
+        "editor.formatOnSave": true
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "[gemfile]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "rubocop.vscode-rubocop"
+    },
+    "[ruby]": {
+        "editor.formatOnSave": false,
+        "editor.semanticHighlighting.enabled": true,
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "rubocop.vscode-rubocop"
+    },
+    "solargraph.commandPath": "/Users/thadeu/.rbenv/shims/solargraph",
+    "[coffeescript]": {
+        "editor.trimAutoWhitespace": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "html.format.wrapLineLength": 160,
+    "editor.wordWrapColumn": 160,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence",
+        "!And sequence",
+        "!If sequence",
+        "!Not sequence",
+        "!Equals sequence",
+        "!Or sequence",
+        "!FindInMap",
+        "!Join",
+        "!Sub sequence",
+        "!ImportValue sequence",
+        "!Split sequence"
+    ],
+    "redhat.telemetry.enabled": true,
+    "prettier.printWidth": 120,
+    "prettier.requireConfig": true,
+    "xml.validation.schema.enabled": "never",
+    "yaml.schemaStore.enable": false,
+    "yaml.validate": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "debug.onTaskErrors": "debugAnyway",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "aws.suppressPrompts": {
+        "regionAddAutomatically": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "terminal.integrated.tabs.enabled": false,
+    "solargraph.bundlerPath": "/Users/thadeu/.rbenv/shims/",
+    "ruby.rubocop.executePath": "/Users/thadeu/.rbenv/shims/",
+    // "rubyLsp.bundleGemfile": "/Users/thadeu/code/ruby-lsp/Gemfile",
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "rbenv"
+    },
+    "rubyLsp.formatter": "rubocop",
+    "editor.multiCursorLimit": 100000,
+    "editor.suggest.showStatusBar": true,
+    "notebook.showCellStatusBar": "visibleAfterExecute",
+    "liveshare.showInStatusBar": "never",
+    "gitlens.liveshare.enabled": false,
+    "vscode-run-rspec-file.integration": "other",
+    "editor.renderWhitespace": "boundary",
+    "editor.guides.indentation": false,
+    "editor.lineHeight": 1.6,
+    "editor.accessibilitySupport": "off",
+    "editor.cursorBlinking": "solid",
+    "breadcrumbs.enabled": true,
+    "editor.fontFamily": "'MesloLGL Nerd Font', 'CascadiaMono', Monaco, 'Courier New', monospace",
+    "editor.inlayHints.fontFamily": "'MesloLGL Nerd Font', 'CascadiaMono', Monaco, 'Courier New', monospace",
+    "gitlens.codeLens.enabled": false,
+    "scm.showOutgoingChanges": "never",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "clowk",
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.enableNeovim": false,
+    "vim.autoindent": false,
+    "vim.easymotionDimBackground": false,
+    "vim.history": 10,
+    "vim.leader": "<space>",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "errorLens.borderRadius": "0.5em",
+    "errorLens.delay": 500,
+    "errorLens.onSaveUpdateOnActiveEditorChange": false,
+    "errorLens.padding": "5",
+    "errorLens.searchForProblemQuery": "https://google.com/?q=$message",
+    "errorLens.selectProblemType": "activeLine",
+    "errorLens.codeLensLength": {
+        "max": 10
+    },
+    "errorLens.delayMode": "debounce",
+    "errorLens.fontSize": "12",
+    "errorLens.fontWeight": "bold",
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.gutterIconSize": "70%",
+    "errorLens.ignoreUntitled": true,
+    "errorLens.messageBackgroundMode": "none",
+    "errorLens.messageMaxChars": 200,
+    "errorLens.replaceLinebreaksSymbol": "",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "scm.showHistoryGraph": false,
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.defaultModel": "foldingProviderModel",
+    "editor.hover.sticky": false,
+    "editor.stickyScroll.enabled": false,
+    "biome.enabled": false,
+    "makefile.configureOnOpen": false,
+    "cursor.cpp.enablePartialAccepts": true,
+    "editor.cursorStyle": "block",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "rubyLsp.featureFlags": {
+        "all": true
+    },
+    "explorer.confirmPasteNative": false,
+    "cursor.chat.terminalShowHoverHint": false,
+    "csv.separator": ",",
+    "extensions.ignoreRecommendations": true,
+    "errorLens.codeLensOnClick": "none",
+    "errorLens.followCursor": "activeLine",
+    "workbench.editor.revealIfOpen": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.openRepositoryInParentFolders": "never",
+    "python.createEnvironment.trigger": "off",
+    "remote.SSH.remotePlatform": {
+        "ubuntu@192.168.2.160": "linux",
+        "root@192.168.2.160": "linux",
+        "root@192.168.2.146": "linux"
+    },
+    "dbcode.history.enabled": true,
+    "dbcode.connections": [
+        {
+            "connectionId": "xVdjcwvXb2y44W5jQBehZ",
+            "name": "todos-golang",
+            "driver": "sqlite",
+            "connectionType": "socket",
+            "socket": "/Users/thadeu/code/golang/todoapp/db/database.db",
+            "readOnly": false,
+            "driverOptions": {
+                "extensions": []
+            },
+            "idleTimeout": 0
+        }
+    ],
+    "cursor.cpp.disabledLanguages": [
+        "plaintext"
+    ],
+    "Devdb.colorTheme": "dark",
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "cursor.composer.shouldAutoAcceptDiffs": false,
+    "cursor.agent_layout_browser_beta_setting": true,
+    "flow-icons.folders.associations": {
+        // Add an icon for a folder name
+        "layers": "resource",
+        // Remove the icon for a folder name
+        "data": "",
+        // Replace the icon for a folder name
+        "storage": "database",  
+    },
+    "flow-icons.files.associations": {
+        // Add an icon for a file extension
+        "*.tss": "typescript",
+        // Add an icon for a specific file name
+        "tailwind.css": "tailwindcss",
+        // Replace the icon for a specific file name
+        "changelog.md": "markdown",
+        "*.cfg": "lua"
+    },
+    "cursor.inlineDiff.enablePerformanceProtection": false,
+    "go.toolsManagement.autoUpdate": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "lldb.launch.expressions": "native",
+    "claudeCode.selectedModel": "opus",
+    "claudeCode.preferredLocation": "panel",
+    "window.autoDetectColorScheme": false,
+    "aws.cloudformation.telemetry.enabled": false,
+    "workbench.colorTheme": "Clowk Night",
+    "editor.mouseWheelScrollSensitivity": 3,
+    "workbench.list.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.mouseWheelScrollSensitivity": 3,
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "workbench.externalBrowser": "/Applications/Brave Browser.app",
+    "window.confirmSaveUntitledWorkspace": false,
+}

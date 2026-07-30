@@ -1,0 +1,23 @@
+[color]
+	ui = true
+[user]
+	name = thadeu
+	email = tadeuu@gmail.com
+[merge]
+	#ff = no
+	#commit = no
+	no-edit = true
+[alias]
+	co = switch
+	cb = switch -c
+	cm = switch master
+	cmm = switch main
+	psh = push origin HEAD --follow-tags
+	cp = switch production
+	lg = log --oneline
+	undo = reset HEAD~
+	merge = merge --no-edit
+	versions = tag --sort=v:refname
+	ntag = "!f() {\n  last=$(git tag --sort=v:refname | tail -n 1)\n  if [ -z \"$last\" ]; then\n    new=\"v0.0.1\"\n  else\n    case \"$last\" in\n      v*) prefix=\"v\"; version=${last#v} ;;\n      *)  prefix=\"\";  version=$last ;;\n    esac\n    major=${version%%.*}\n    rest=${version#*.}\n    minor=${rest%%.*}\n    patch=${rest#*.}\n    patch=$((patch + 1))\n    new=\"${prefix}${major}.${minor}.${patch}\"\n  fi\n  git tag \"$new\" && echo \"$new\"\n}; f"
+	tagn = "!f() { bump=\"patch\"; while [ $# -gt 0 ]; do case \"$1\" in --major) bump=\"major\"; shift ;; --minor) bump=\"minor\"; shift ;; --patch) bump=\"patch\"; shift ;; *) shift ;; esac; done; last=$(git tag --sort=v:refname | tail -n 1); if [ -z \"$last\" ]; then case \"$bump\" in major) new=\"v1.0.0\" ;; minor) new=\"v0.1.0\" ;; patch) new=\"v0.0.1\" ;; esac; else case \"$last\" in v*) prefix=\"v\"; version=${last#v} ;; *) prefix=\"\"; version=$last ;; esac; major=$(echo \"$version\" | cut -d. -f1); minor=$(echo \"$version\" | cut -d. -f2); patch=$(echo \"$version\" | cut -d. -f3); [ -z \"$minor\" ] && minor=0; [ -z \"$patch\" ] && patch=0; case \"$bump\" in major) major=$((major + 1)); minor=0; patch=0 ;; minor) minor=$((minor + 1)); patch=0 ;; patch) patch=$((patch + 1)) ;; esac; new=\"${prefix}${major}.${minor}.${patch}\"; fi; git tag \"$new\" && echo \"$new\"; }; f"
+	tg = "!f() { bump=\"patch\"; while [ $# -gt 0 ]; do case \"$1\" in --major) bump=\"major\"; shift ;; --minor) bump=\"minor\"; shift ;; --patch) bump=\"patch\"; shift ;; *) shift ;; esac; done; last=$(git tag --sort=v:refname | tail -n 1); if [ -z \"$last\" ]; then case \"$bump\" in major) new=\"v1.0.0\" ;; minor) new=\"v0.1.0\" ;; patch) new=\"v0.0.1\" ;; esac; else case \"$last\" in v*) prefix=\"v\"; version=${last#v} ;; *) prefix=\"\"; version=$last ;; esac; major=$(echo \"$version\" | cut -d. -f1); minor=$(echo \"$version\" | cut -d. -f2); patch=$(echo \"$version\" | cut -d. -f3); [ -z \"$minor\" ] && minor=0; [ -z \"$patch\" ] && patch=0; case \"$bump\" in major) major=$((major + 1)); minor=0; patch=0 ;; minor) minor=$((minor + 1)); patch=0 ;; patch) patch=$((patch + 1)) ;; esac; new=\"${prefix}${major}.${minor}.${patch}\"; fi; git tag \"$new\" && echo \"$new\"; }; f"
