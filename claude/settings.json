@@ -10,10 +10,14 @@
       "Bash(pnpm add *)"
     ],
     "defaultMode": "auto",
-    "additionalDirectories": [
-    ]
+    "additionalDirectories": []
   },
   "model": "opus[1m]",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline/statusline.sh",
+    "padding": 0
+  },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
@@ -28,13 +32,11 @@
     "git@skills": true,
     "nimble@claude-plugins-official": true
   },
-  "extraKnownMarketplaces": {
-    "skills": {
-    }
-  },
+  "extraKnownMarketplaces": {},
   "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
   "skipWorkflowUsageWarning": true,
-  "theme": "dark-ansi",
-  "skipAutoPermissionPrompt": true
+  "theme": "auto",
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen"
 }
