@@ -184,6 +184,8 @@ cask "opencode-desktop"
 cask "orbstack"
 # System monitor for the menu bar
 cask "stats"
+# Open-source code editor
+cask "visual-studio-code"
 # Rust-based terminal
 cask "warp"
 # Network protocol analyzer
