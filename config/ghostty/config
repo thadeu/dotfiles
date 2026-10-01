@@ -10,7 +10,7 @@ font-thicken=true
 background-opacity = 0.96
 background-blur = true
 
-shell-integration-features = no-cursor,sudo,no-title
+shell-integration-features = no-cursor,sudo
 cursor-style = block
 adjust-cell-height = 0.2%
 mouse-scroll-multiplier = 2
