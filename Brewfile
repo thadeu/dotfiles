@@ -166,7 +166,7 @@ cask "font-caskaydia-mono-nerd-font"
 # Nerd Font used by Ghostty and powerlevel10k
 cask "font-meslo-lg-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
-cask "ghostty"
+cask "ghostty@tip"
 # Game launcher
 cask "heroic"
 # Programming language for technical computing
