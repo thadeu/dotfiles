@@ -34,7 +34,11 @@ else
 fi
 
 step "Homebrew packages (Brewfile)"
-brew bundle --file="$DOTFILES/Brewfile"
+
+# A single stale entry shouldn't abort the shell setup that follows.
+if ! brew bundle --file="$DOTFILES/Brewfile"; then
+  printf '    \033[33m!\033[0m brew bundle had failures — fix the Brewfile and re-run\n'
+fi
 
 step "oh-my-zsh"
 

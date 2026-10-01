@@ -1,8 +1,7 @@
 tap "dokku/repo"
 tap "go-task/tap"
+tap "hashicorp/tap"
 tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "manaflow-ai/cmux"
 tap "ngrok/ngrok"
@@ -140,7 +139,7 @@ brew "socket_vmnet"
 # SOund eXchange: universal sound sample translator
 brew "sox"
 # Tool to build, change, and version infrastructure
-brew "terraform"
+brew "hashicorp/tap/terraform"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Tunnel UDP packets over a TCP connection
@@ -164,6 +163,8 @@ cask "android-commandlinetools"
 # Android SDK component
 cask "android-platform-tools"
 cask "font-caskaydia-mono-nerd-font"
+# Nerd Font used by Ghostty and powerlevel10k
+cask "font-meslo-lg-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Game launcher
@@ -267,8 +268,6 @@ vscode "vstirbu.vscode-mermaid-preview"
 vscode "wix.vscode-import-cost"
 go "github.com/air-verse/air"
 go "github.com/onsi/ginkgo/v2/ginkgo"
-go "cmd/go"
-go "cmd/gofmt"
 go "golang.org/x/tools/gopls"
 go "github.com/mickamy/gotcha"
 go "gotest.tools/gotestsum"

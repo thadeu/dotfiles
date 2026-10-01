@@ -6,4 +6,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 # Added by swiftly
-. "/Users/thadeu/.swiftly/env.sh"
+[[ -f "$HOME/.swiftly/env.sh" ]] && . "$HOME/.swiftly/env.sh"

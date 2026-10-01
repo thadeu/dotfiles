@@ -1,4 +1,4 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
-. "$HOME/.cargo/env"
+[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 
 export PATH=/Users/thadeu/.local/bin:$PATH

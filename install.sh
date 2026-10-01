@@ -117,19 +117,23 @@ group_terminal() {
   link config/zellij    "$HOME/.config/zellij"
 
   # Ghostty reads ~/.config/ghostty/config, but a config in Application
-  # Support silently outranks it. Move that one aside so the symlink wins.
-  local shadow="$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+  # Support silently outranks it (and is what cmd+, opens). Ghostty 1.3+
+  # names it config.ghostty. Move both aside so the symlink wins.
+  local app_support="$HOME/Library/Application Support/com.mitchellh.ghostty"
+  local shadow
 
-  if [[ -f "$shadow" && ! -L "$shadow" ]]; then
+  for shadow in "$app_support/config" "$app_support/config.ghostty" "$app_support/themes"; do
+    [[ -e "$shadow" && ! -L "$shadow" ]] || continue
+
     if $DRY_RUN; then
-      warn "would move aside $(tilde "$shadow") (shadows ~/.config/ghostty/config)"
+      warn "would move aside $(tilde "$shadow") (shadows ~/.config/ghostty)"
     else
       mkdir -p "$BACKUP_DIR/$(dirname "${shadow#$HOME/}")"
       mv "$shadow" "$BACKUP_DIR/${shadow#$HOME/}"
       warn "moved aside $(tilde "$shadow") — it would shadow the symlink"
       ((backed_up++)) || true
     fi
-  fi
+  done
 }
 
 group_nvim() {
